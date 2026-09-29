@@ -29,7 +29,12 @@ const port = process.env.PORT || 5000;
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const clientDistPath = path.resolve(currentDir, "../../client/dist");
 const clientIndexPath = path.join(clientDistPath, "index.html");
-const defaultClientOrigins = ["http://localhost:5173", "http://127.0.0.1:5173"];
+const defaultClientOrigins = [
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  "http://localhost:5000",
+  "http://127.0.0.1:5000"
+];
 const configuredClientOrigins = (process.env.CLIENT_URL || "")
   .split(",")
   .map((origin) => origin.trim())
