@@ -108,11 +108,4 @@ app.use((err, _req, res, _next) => {
   });
 });
 
-export { app };
-
-if (process.env.NODE_ENV !== "test") {
-  connectDB();
-  app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
-  });
-}
+export default app;
