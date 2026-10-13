@@ -39,7 +39,9 @@ const configuredClientOrigins = (process.env.CLIENT_URL || "")
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
-const allowedOrigins = new Set([...defaultClientOrigins, ...configuredClientOrigins]);
+const allowedOrigins = new Set([...defaultClientOrigins, ...configuredClientOrigins,
+  "https://full-stack-job-portal-khnkyab4t-jindalk800-1607s-projects.vercel.app",
+  "https://full-stack-job-portal-gilt.vercel.app"]);
 
 const csrfOriginGuard = (req, res, next) => {
   const isSafeMethod = ["GET", "HEAD", "OPTIONS"].includes(req.method);
