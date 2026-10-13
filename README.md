@@ -8,9 +8,9 @@ Built using **React, Node.js, Express.js, and MongoDB** with secure authenticati
 
 ## 🚀 Live Demo
 
-🔗 **Live Website:** [Add your deployed frontend URL here]
+🔗 **Live Website:** https://full-stack-job-portal-gilt.vercel.app/
 
-🔗 **Backend API:** [Add your deployed backend URL here]
+🔗 **Backend API:** https://fullstack-jobportal-2.onrender.com
 
 ---
 
